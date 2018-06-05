@@ -56,7 +56,7 @@ class Student
       LIMIT 1
       SQL
 
-    self.new_from_db(DB:[conn].execute(sql, name).flatten)
+    self.new_from_db(DB[:conn].execute(sql, name).flatten)
   end
 
   def update
